@@ -1,0 +1,72 @@
+# ============================
+# Qt / C++ 构建产物
+# ============================
+build/
+*.o
+*.obj
+*.moc
+*.moc.cpp
+*.rcc
+*.uic
+qrc_*.cpp
+ui_*.h
+moc_*.cpp
+moc_*.h
+
+# ============================
+# Qt Creator / IDE 配置
+# ============================
+.qtcreator/
+*.user
+*.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc.depends
+*.autosave
+*.autosave.*
+qtcreator.config
+qtcreator.creator
+qtcreator.files
+qtcreator.includes
+*.cflags
+*.cxxflags
+*.creator.user
+*.config
+*.creator
+*.files
+*.includes
+
+# ============================
+# 可执行文件与调试符号
+# ============================
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+*.pdb
+*.ilk
+*.exp
+
+# ============================
+# 敏感配置文件 (含真实 API 密钥,禁止提交)
+# ============================
+config.ini
+config.local.ini
+*.secret
+*.key
+.env
+.env.local
+
+# ============================
+# 系统与编辑器临时文件
+# ============================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.vscode/
+.idea/

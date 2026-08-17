@@ -1,0 +1,27 @@
+; ============================================================
+; AIwenda 配置示例文件
+; ------------------------------------------------------------
+; 使用方法:
+;   1. 复制本文件为 config.ini
+;   2. 将 key 替换为您在 SiliconFlow 平台申请的真实 API Key
+;   3. 将 config.ini 放到可执行文件所在目录,或项目根目录
+;      (程序会自动按 appDir -> ../ -> ../../ -> ../../../ 顺序查找)
+;
+; !! 警告: config.ini 已被 .gitignore 忽略,请勿提交真实密钥 !!
+; ============================================================
+
+[api]
+; SiliconFlow API Key,格式以 sk- 开头,可在 https://cloud.siliconflow.cn 申请
+key=sk-YOUR_REAL_API_KEY_HERE
+
+; AI 对话端点 (兼容 OpenAI Chat Completions 协议)
+endpoint=https://api.siliconflow.cn/v1/chat/completions
+
+; 默认对话模型 (SiliconFlow 平台支持的多模型之一)
+model=deepseek-ai/DeepSeek-V3
+
+; 翻译服务端点 (可与对话端点相同)
+translate_endpoint=https://api.siliconflow.cn/v1/chat/completions
+
+; 情感分析服务端点 (可与对话端点相同)
+sentiment_endpoint=https://api.siliconflow.cn/v1/chat/completions
